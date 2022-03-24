@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/agence-recrutement/static/js/main.f78356f5.chunk.js",
+    "main.js.map": "/agence-recrutement/static/js/main.f78356f5.chunk.js.map",
+    "runtime-main.js": "/agence-recrutement/static/js/runtime-main.4499358d.js",
+    "runtime-main.js.map": "/agence-recrutement/static/js/runtime-main.4499358d.js.map",
+    "static/js/2.f8f654c2.chunk.js": "/agence-recrutement/static/js/2.f8f654c2.chunk.js",
+    "static/js/2.f8f654c2.chunk.js.map": "/agence-recrutement/static/js/2.f8f654c2.chunk.js.map",
+    "static/js/3.6872084e.chunk.js": "/agence-recrutement/static/js/3.6872084e.chunk.js",
+    "static/js/3.6872084e.chunk.js.map": "/agence-recrutement/static/js/3.6872084e.chunk.js.map",
+    "index.html": "/agence-recrutement/index.html",
+    "static/js/2.f8f654c2.chunk.js.LICENSE.txt": "/agence-recrutement/static/js/2.f8f654c2.chunk.js.LICENSE.txt",
+    "static/media/404.2dc32314.svg": "/agence-recrutement/static/media/404.2dc32314.svg",
+    "static/media/empty.a0b94b24.svg": "/agence-recrutement/static/media/empty.a0b94b24.svg",
+    "static/media/home-illustration.4641bfe8.svg": "/agence-recrutement/static/media/home-illustration.4641bfe8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4499358d.js",
+    "static/js/2.f8f654c2.chunk.js",
+    "static/js/main.f78356f5.chunk.js"
+  ]
+}
