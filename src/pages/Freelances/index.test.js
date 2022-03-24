@@ -1,35 +1,34 @@
-import { rest } from 'msw'
-import '@testing-library/jest-dom/extend-expect'
-import { setupServer } from 'msw/node'
-// // Ci-dessous on comment pour transformer l'API en data mockées
+// // // Ici on comment pour transformer l'API en data mockées
+// import { rest } from 'msw'
+// import '@testing-library/jest-dom/extend-expect'
+// import { setupServer } from 'msw/node'
 // import { waitForElementToBeRemoved, screen } from '@testing-library/react'
 // import { render } from '../../utils/test'
 // import Freelances from '.'
 
-const freelancersMockedData = [
-  {
-    name: 'Harry Potter',
-    job: 'Magicien frontend',
-    picture: '',
-  },
-  {
-    name: 'Hermione Granger',
-    job: 'Magicienne fullstack',
-    picture: '',
-  },
-]
+// const freelancersMockedData = [
+//   {
+//     name: 'Harry Potter',
+//     job: 'Magicien frontend',
+//     picture: '',
+//   },
+//   {
+//     name: 'Hermione Granger',
+//     job: 'Magicienne fullstack',
+//     picture: '',
+//   },
+// ]
 
-const server = setupServer(
-  rest.get('http://localhost:8000/freelances', (req, res, ctx) => {
-    return res(ctx.json({ freelancersList: freelancersMockedData }))
-  })
-)
+// const server = setupServer(
+//   rest.get('http://localhost:8000/freelances', (req, res, ctx) => {
+//     return res(ctx.json({ freelancersList: freelancersMockedData }))
+//   })
+// )
 
-beforeAll(() => server.listen())
-afterEach(() => server.resetHandlers())
-afterAll(() => server.close())
+// beforeAll(() => server.listen())
+// afterEach(() => server.resetHandlers())
+// afterAll(() => server.close())
 
-// // Ici on comment pour transformer l'API en data mockées
 // it('Should display freelancers names after loader is removed', async () => {
 //   render(<Freelances />)
 
