@@ -29,11 +29,11 @@ function Header() {
 
     return (
         <NavContainer>
-            <Link to="/">
+            <Link to="/agence-recrutement">
                 <HomeLogo src={theme === 'light' ? DarkLogo : LightLogo} />
             </Link>
             <div>
-                <StyledLink $theme={theme} to="/">Accueil</StyledLink>
+                <StyledLink $theme={theme} to="/agence-recrutement">Accueil</StyledLink>
                 <StyledLink $theme={theme} to="/freelances">Profils</StyledLink>  
                 <StyledLink to="/survey/1" $isFullLink>Faire le test</StyledLink>
             </div>
