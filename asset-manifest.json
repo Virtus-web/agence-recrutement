@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/agence-recrutement/static/js/main.8e5a35c9.chunk.js",
-    "main.js.map": "/agence-recrutement/static/js/main.8e5a35c9.chunk.js.map",
+    "main.js": "/agence-recrutement/static/js/main.c258db44.chunk.js",
+    "main.js.map": "/agence-recrutement/static/js/main.c258db44.chunk.js.map",
     "runtime-main.js": "/agence-recrutement/static/js/runtime-main.1f7d5397.js",
     "runtime-main.js.map": "/agence-recrutement/static/js/runtime-main.1f7d5397.js.map",
     "static/js/2.34e3e5c8.chunk.js": "/agence-recrutement/static/js/2.34e3e5c8.chunk.js",
@@ -28,6 +28,6 @@
   "entrypoints": [
     "static/js/runtime-main.1f7d5397.js",
     "static/js/2.34e3e5c8.chunk.js",
-    "static/js/main.8e5a35c9.chunk.js"
+    "static/js/main.c258db44.chunk.js"
   ]
 }
