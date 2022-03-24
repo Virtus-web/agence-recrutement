@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
 import { useTheme } from '../../utils/hooks'
+// import Avatar from '../../images/avatar1.jpg'
 
 //Prop par défaut au lieu d'afficher une erreur, méthode 1
 // function Card({ label, title = 'Unknown', picture }) {
@@ -64,12 +65,13 @@ const CardWrapper = styled.div`
 
 function Card({ label, title = 'Unknown', picture }) {
     const { theme } = useTheme()
+    console.log(picture)
 
     return (
         <CardWrapper theme={theme}>
             <CardLabel theme={theme}>{label}</CardLabel>
             {/* <CardImage src={picture} alt="freelance" height={80} width={80} /> */}
-            <CardImage src={picture} alt="freelance" />
+            <CardImage src={require(`../../images/${picture}`).default} alt="freelance" />
             <CardTitle theme={theme}>{title}</CardTitle>
         </CardWrapper>
     )

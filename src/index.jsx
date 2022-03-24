@@ -28,7 +28,7 @@ ReactDOM.render(
                 <GlobalStyle />
                 <Header />
                 <Switch>
-                    <Route exact path="/">
+                    <Route exact path="/agence-recrutement">
                         <Home />
                     </Route>
                     <Route path="/survey/:questionNumber">

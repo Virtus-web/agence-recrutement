@@ -79,3 +79,11 @@ Donc les changements se situent dans les fichiers faisant appel à fetch, survey
     - remplacer surveyData par surveyDatacrocrochet0crochet
 Pour le fichier Freelances/index.js on peut laisser freelancersList sans les crochets 0, et commenter le style du loader en plus.
 Et enfin, penser à décommenter le test dans le dossier Freelances l4 à 7 et 32 à 40, le dernier test
+
+Pour le fichier Profile:
+    - décommenter la l172 useState et les lignes 175 à 182 le fetch
+     décommenter l'import du useState et useEffect aussi et commenter l'import du fichiers JSON à la place
+     - enlever profileDatacrochetqueryIdcrochet pour juste profileData
+
+     Et pour les imgaes dans les fichiers concernés on remplace l'url absolu localhost par require(`../../images/${picture}`).default et on modifie le nom picture dans les datas,
+     http://localhost:8000/images/7.jpeg à la place de avatar1.jpg

@@ -75,7 +75,9 @@
 
 //VERSION STATELESS COMPONENT
 
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
+//ICI
+import { profileData } from '../../datas/profile'
 import styled from 'styled-components'
 import { useParams } from 'react-router-dom'
 import colors from '../../utils/style/colors'
@@ -167,17 +169,17 @@ const Availability = styled.span`
 function Profile(props) {
     console.log(props)
   const { id: queryId } = useParams()
-  const [profileData, setProfileData] = useState({})
+//   const [profileData, setProfileData] = useState({})
 
   console.log(queryId)
-  console.log(props.match.params.id)
-  useEffect(() => {
-    fetch(`http://localhost:8000/freelance?id=${queryId}`)
-      .then((response) => response.json())
-      .then((jsonResponse) => {
-        setProfileData(jsonResponse?.freelanceData)
-      })
-  }, [queryId])
+//   console.log(props.match.params.id)
+//   useEffect(() => {
+//     fetch(`http://localhost:8000/freelance?id=${queryId}`)
+//       .then((response) => response.json())
+//       .then((jsonResponse) => {
+//         setProfileData(jsonResponse?.freelanceData)
+//       })
+//   }, [queryId])
 
   const {
     picture,
@@ -188,13 +190,15 @@ function Profile(props) {
     skills,
     available,
     id,
-  } = profileData
+  } = profileData[queryId]
+
+  console.log(profileData[queryId])
 
   return (
     <ThemeContext.Consumer>
       {({ theme }) => (
         <ProfileWrapper theme={theme}>
-          <Picture src={picture} alt={name} height={150} width={150} />
+          <Picture src={require(`../../images/${picture}`).default} alt={name} height={150} width={150} />
           <ProfileDetails theme={theme}>
             <TitleWrapper>
               <Title>{name}</Title>
